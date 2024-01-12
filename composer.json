@@ -24,5 +24,15 @@
             "email": "husensocial@gmail.com"
         }
     ],
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Afuntech\\BmlConnect\\Providers\\BmlConnectServiceProvider"
+            ],
+            "aliases": {
+                "Debugbar": "Afuntech\\BmlConnect\\Facades\\BmlConnectFacade"
+            }
+        }
+    }
 }
